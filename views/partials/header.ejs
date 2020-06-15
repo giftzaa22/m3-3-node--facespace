@@ -8,5 +8,9 @@
 <body>
   <header class ="header">
       <h1 class = "header h1">Facespace</h1>
-      <h2>All Facespace Members</h2>
+<% if (currentUser.name) { %>
+<h1><%= `Hello ${currentUser.name}`%></h1>
+<% } else { %>
+  <a href="/signIn"><h2 class = "header h2">Sign In</h2></a>
+<% } %>
   </header>

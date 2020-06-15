@@ -13,6 +13,11 @@
 .homepage__all--user img {
   width: 120px;
 }
-.homepagefriend {
-  border: 5px solid orange;
+.heart {
+  display: none;
+}
+.homepagefriend .heart {
+  display: inline-block;
+  position: relative;
+  left: -130px;
 }
